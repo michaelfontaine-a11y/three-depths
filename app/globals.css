@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --parchment: #f5eedc;
+  --parchment-deep: #ebe1c6;
+  --parchment-shadow: #ddd0ad;
+  --ink: #1f1a10;
+  --ink-soft: #4a3f2a;
+  --ink-muted: #6b5d42;
+  --gold: #b8943d;
+  --gold-deep: #8c6f2c;
+  --burgundy: #6b2020;
+  --burgundy-level: #8c2f2f;
+  --navy: #0e2038;
+  --navy-level: #2b4a72;
+  --cream: #fbf6e8;
+}
+
+html,
+body {
+  background-color: var(--parchment);
+  color: var(--ink);
+}
+
+body {
+  font-feature-settings: "liga", "dlig", "onum";
+  background-image: radial-gradient(
+      ellipse at top,
+      rgba(184, 148, 61, 0.05) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at bottom,
+      rgba(107, 32, 32, 0.04) 0%,
+      transparent 60%
+    );
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(184, 148, 61, 0.35);
+  color: var(--ink);
+}
+
+/* Smoother focus rings */
+*:focus-visible {
+  outline: 2px solid var(--gold-deep);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Subtle paper texture via gradient noise */
+.paper-grain {
+  position: relative;
+}
+.paper-grain::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    circle at 50% 50%,
+    rgba(31, 26, 16, 0.015) 1px,
+    transparent 2px
+  );
+  background-size: 3px 3px;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+}
