@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import type { LevelKey, Topic } from "@/lib/types";
 import { LEVEL_META } from "@/lib/types";
 import ContentRenderer, { renderTitleWithEmphasis } from "./ContentRenderer";
@@ -96,6 +97,41 @@ export default function LessonClient({ topic, levelKey }: Props) {
 
       <main className="flex-1 w-full">
         <article className="max-w-prose mx-auto px-5 md:px-8 py-10 md:py-16 pb-40">
+          {screen.illustration && (
+            <figure
+              className="mb-10 -mx-2 md:-mx-6 relative"
+              style={{
+                filter: `drop-shadow(0 18px 32px ${meta.accentDeep}22)`,
+              }}
+            >
+              <div
+                className="relative overflow-hidden rounded-sm"
+                style={{
+                  border: `1px solid ${meta.accent}55`,
+                  boxShadow: `inset 0 0 0 4px #FBF6E8, inset 0 0 0 5px ${meta.accent}60`,
+                  padding: "6px",
+                  background: "#FBF6E8",
+                }}
+              >
+                <Image
+                  src={screen.illustration}
+                  alt={screen.illustrationAlt ?? screen.title}
+                  width={1024}
+                  height={1024}
+                  sizes="(min-width: 780px) 780px, 100vw"
+                  className="w-full h-auto block rounded-sm"
+                  priority={index === 0}
+                />
+              </div>
+              <figcaption
+                className="sr-only"
+                aria-hidden={false}
+              >
+                {screen.illustrationAlt ?? screen.title}
+              </figcaption>
+            </figure>
+          )}
+
           <div className="mb-10">
             {screen.eyebrow && (
               <div

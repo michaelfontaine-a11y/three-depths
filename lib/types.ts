@@ -6,6 +6,8 @@ export interface Screen {
   titleEmphasis?: string;
   eyebrow?: string;
   contentMarkdown: string;
+  illustration?: string;
+  illustrationAlt?: string;
 }
 
 export interface Level {

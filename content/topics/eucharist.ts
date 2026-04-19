@@ -16,6 +16,9 @@ export const eucharist: Topic = {
           num: "I",
           title: "A Very Special Meal",
           titleEmphasis: "Special",
+          illustration: "/illustrations/eucharist/child/01-special-meal.jpg",
+          illustrationAlt:
+            "A priest in gold vestments elevating the host and chalice at an altar, kneeling angels on either side.",
           contentMarkdown: `[DROPCAP]Every Sunday at Mass, something happens that looks a little like bread and wine. But it is not bread and wine. It is Jesus.[/DROPCAP]
 
 That sounds strange, doesn't it? How can something that looks like bread actually be Jesus?
@@ -28,6 +31,9 @@ The answer is that Jesus said so. And when Jesus says something is true, it is t
           num: "II",
           title: "Jesus Said Something Strange",
           titleEmphasis: "Strange",
+          illustration: "/illustrations/eucharist/child/02-something-strange.jpg",
+          illustrationAlt:
+            "Jesus teaching a crowd in the synagogue at Capernaum, some listeners leaning in, others puzzled.",
           contentMarkdown: `One day, a big crowd was following Jesus. They had seen Him do amazing things — healing sick people, even feeding five thousand people with just a little bread.
 
 Then Jesus said something that surprised everyone:
@@ -42,6 +48,9 @@ They waited for Jesus to say, "Oh, I was just pretending." But He didn't.`,
           num: "III",
           title: "Some People Walked Away",
           titleEmphasis: "Walked Away",
+          illustration: "/illustrations/eucharist/child/03-walked-away.jpg",
+          illustrationAlt:
+            "Jesus with His twelve apostles as a crowd of former followers walks away down a dusty path.",
           contentMarkdown: `Jesus didn't take His words back. Instead, He said it even more strongly. He really meant it.
 
 And something sad happened. Many of the people who had been following Jesus turned around and walked home. They thought He was asking for something too strange.
@@ -58,6 +67,9 @@ Peter answered, "Lord, where would we go? You have the words of eternal life."
           num: "IV",
           title: "The Last Supper",
           titleEmphasis: "Last Supper",
+          illustration: "/illustrations/eucharist/child/04-last-supper.jpg",
+          illustrationAlt:
+            "Jesus seated at the center of the Last Supper table breaking bread while the apostles look on.",
           contentMarkdown: `On the night before Jesus died on the cross, He had dinner with His closest friends. This is the very first Mass.
 
 Jesus picked up a piece of bread. He blessed it. He broke it. And He said four words that changed everything:
@@ -74,6 +86,9 @@ And then He gave His friends something very important to do: "Do this in memory 
           num: "V",
           title: "His Friends Remembered",
           titleEmphasis: "Remembered",
+          illustration: "/illustrations/eucharist/child/05-remembered.jpg",
+          illustrationAlt:
+            "Saint Ignatius of Antioch writing a letter by oil-lamp light, a dove near the window.",
           contentMarkdown: `Jesus' friends did exactly what He told them to do. Every week, they gathered to break bread — and every week, Jesus became really present, just like He promised.
 
 One of those early Christians was a man named **Ignatius**. Ignatius learned the faith from the Apostle John himself — the same John who leaned against Jesus' shoulder at the Last Supper!
@@ -88,6 +103,9 @@ That's only about 80 years after Jesus rose from the dead. The people who learne
           num: "VI",
           title: "What We Do Today",
           titleEmphasis: "Today",
+          illustration: "/illustrations/eucharist/child/06-what-we-do-today.jpg",
+          illustrationAlt:
+            "A modern priest elevating the host at Mass, with a translucent image of Christ echoing the same gesture above.",
           contentMarkdown: `When you go to Mass, you are doing what Christians have done every single week for two thousand years.
 
 The priest says the same words Jesus said: "This is my body. This is my blood."
@@ -106,6 +124,9 @@ He keeps His promise every single time.
           num: "VII",
           title: "What This Means for You",
           titleEmphasis: "for You",
+          illustration: "/illustrations/eucharist/child/07-for-you.jpg",
+          illustrationAlt:
+            "A child kneeling in quiet wonder before an altar with a glowing monstrance and candles.",
           contentMarkdown: `The next time you go to Mass, look at the altar.
 
 When the priest holds up the bread, it is not a picture. It is not a reminder. It is not a story.
